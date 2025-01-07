@@ -43,14 +43,11 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Trouble Shooting",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "trouble-shooting/notion-connection",
+        "trouble-shooting/error",
+        "trouble-shooting/shortcut-problem"
       ]
     }
   ],
