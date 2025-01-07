@@ -10,13 +10,93 @@ A project is a space connected to a Notion database that can collect multiple re
 
 ### Notion Config
 
-#### Create a new page and a database
+#### Clone from the project template
+
+Currently the platform does not support customized database define.
+
+As this is a tool I use myself. The structure of the database is fine enough to make a few products of my own, including blogs, curated-lists.
+
+The project template is [here](https://storm-patella-019.notion.site/Project-Template-174228d4dc6d80c9b5dbdda98398ff4e)
+
+clone to your own workspace.
 
 #### Get the database_id
 
+You can get the whole database link here
+
+<img
+  className="rounded-2xl"
+  src="/images/notiongetdatabaseid.png"
+  alt="notion getdatabaseid"
+/>
+
+The link structure is like this.
+
+<img
+  className="rounded-2xl"
+  src="/images/notiondatabaseid.png"
+  alt="notion databaseid"
+/>
+
 #### New a Integration
 
+Integration is used to operate Notion through API.
+
+The integration management page is [here](https://www.notion.so/profile/integrations)
+
+<img
+  className="rounded-2xl"
+  src="/images/notionnewintegration.png"
+  alt="notion integration1"
+/>
+
+Click New Integration.
+
+<img
+  className="rounded-2xl"
+  src="/images/notionnewintegration2.png"
+  alt="notion integration2"
+/>
+
+Config the integration.
+
+Name: It is better to name the integration based on its purpose.
+
+Workspace: Choose your own workspace where your database will be built in.
+
+Type: Internal
+
+Click Save.
+
+<img
+  className="rounded-2xl"
+  src="/images/notionnewintegration3.png"
+  alt="notion integration3"
+/>
+
+Continue...
+
+The "Internal Integration Secret" will be used to config the project.
+
+Capabilities: Check these three capabilities.
+
+Click Save.
+
+<img
+  className="rounded-2xl"
+  src="/images/notionintegration.png"
+  alt="notion integration"
+/>
+
+You can check the Integrations you created here.
+
 #### Connect the database to Integration
+
+<img
+  className="rounded-2xl"
+  src="/images/notionconnecttodatabase.png"
+  alt="notion integration"
+/>
 
 ### Create Project
 
