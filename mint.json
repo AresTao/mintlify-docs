@@ -7,12 +7,12 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#3c78d8",
+    "light": "#1c4587",
+    "dark": "#3c78d8",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#3c78d8",
+      "to": "#1c4587"
     }
   },
   "topbarLinks": [
@@ -29,7 +29,7 @@
   "anchors": [
     {
       "name": "Blog",
-      "icon": "newspaper",
+      "icon": "blog",
       "url": "https://infotobiz.com/blog"
     }
   ],
