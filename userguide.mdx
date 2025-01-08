@@ -4,123 +4,111 @@ description: 'usage tricks that can make you more productive.'
 icon: 'user'
 ---
 
-## Basic Page Information
-
-The plugin automatically retrieves the webpage's title, description, og-image, and other information and automatically fills in the corresponding fields.
+## Save your first record
 
 
-Cover
+### Basic Page Information
 
-slug
+The extension automatically retrieves the webpage's title, description, og-image, and other information and automatically fills in the fields.
 
-Categories
+We can see an [example](https://sentry.io/welcome/) below.
 
-Tags
+<img
+  className="rounded-2xl"
+  src="/images/userguide.png"
+  alt="user guide"
+/>
 
-Notes
+The title, description and og-image are originally used for SEO. The search engine could know what does this website do.
 
-View Records
+Image: Each database record can set a cover. We set the image to be the cover by default. Users can deselect it if they don't like it to be the cover.
 
+Title / Description: you can change the words as you want.
 
+Slug: slug is the unique key used for SEO. As you change the title, this field will change automatically. If you want to make your database into blogs. Slug should be unique and will be display on the url of blog.
 
-<Info>
-  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding.
-</Info>
+### Project
 
-Follow these steps to install and run Mintlify on your operating system:
+As you click the entension, it will get all the projects you created on InfoToBiz.
 
-**Step 1**: Install Mintlify:
+<img
+  className="rounded-2xl"
+  src="/images/userguideproject.png"
+  alt="user guide project"
+/>
 
-<CodeGroup>
+Pick a project that you want to collect this record in.
 
-  ```bash npm
-  npm i -g mintlify
-  ```
+### Category
 
-```bash yarn
-yarn global add mintlify
-```
+This is a single-select type field. The options are the same as those in the notion database.
 
-</CodeGroup>
+<img
+  className="rounded-2xl"
+  src="/images/userguidecategory.png"
+  alt="user guide category"
+/>
 
-**Step 2**: Navigate to the docs directory (where the `mint.json` file is located) and execute the following command:
+If you want to create a new one. Type in the new category and type "enter".
 
-```bash
-mintlify dev
-```
+### Tags
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+This is a multi-select type field. The options are the same as those in the notion database.
 
-### Custom Ports
+<img
+  className="rounded-2xl"
+  src="/images/userguidetags.png"
+  alt="user guide tags"
+/>
 
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. To run Mintlify on port 3333, for instance, use this command:
+If you want to create a new one. Type in the new category and type "enter". 
 
-```bash
-mintlify dev --port 3333
-```
+You can select multiple tags.
 
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
+### Notes
 
-```md
-Port 3000 is already in use. Trying 3001 instead.
-```
+We provide a rich-text editor. It is nearly the same as you edit in Notion.
 
-## Mintlify Versions
+<img
+  className="rounded-2xl"
+  src="/images/userguidenote.png"
+  alt="user guide note"
+/>
 
-Please note that each CLI release is associated with a specific version of Mintlify. If your local website doesn't align with the production version, please update the CLI:
+Focus mode 
 
-<CodeGroup>
+Click this, you can focus on your note taking.
 
-```bash npm
-npm i -g mintlify@latest
-```
+<img
+  className="rounded-2xl"
+  src="/images/userguidenote2.png"
+  alt="user guide note2"
+/>
 
-```bash yarn
-yarn global upgrade mintlify
-```
+After you fill all the field as you carefully think. Click "Save to InfoToBiz".
 
-</CodeGroup>
+The record will be collected in the database behind your selected project.
 
-## Validating Links
+### View the saved record
 
-The CLI can assist with validating reference links made in your documentation. To identify any broken links, use the following command:
+After saving, you can click the "View" button to see the record in Notion.
 
-```bash
-mintlify broken-links
-```
+<img
+  className="rounded-2xl"
+  src="/images/userguideview.png"
+  alt="user guide view"
+/>
 
-## Deployment
+This example is saved like this.
 
-<Tip>
-  Unlimited editors available under the [Pro
-  Plan](https://mintlify.com/pricing) and above.
-</Tip>
+<img
+  className="rounded-2xl"
+  src="/images/userguideview3.jpg"
+  alt="user guide view2"
+/>
 
-If the deployment is successful, you should see the following:
+The rich-text feature is also saved correctly.
 
-<Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
-</Frame>
+So, this is your first save. It is very convenient, isn't it? 
 
-## Code Formatting
-
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
-
-    This may be due to an outdated version of node. Try the following:
-    1. Remove the currently-installed version of mintlify: `npm remove -g mintlify`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall mintlify: `npm install -g mintlify`
-  </Accordion>
-
-  <Accordion title="Issue: Encountering an unknown error">
-  
-    Solution: Go to the root of your device and delete the \~/.mintlify folder. Afterwards, run `mintlify dev` again.
-  </Accordion>
-</AccordionGroup>
-
-Curious about what changed in the CLI version? [Check out the CLI changelog.](https://www.npmjs.com/package/mintlify?activeTab=versions)
+If you meet any problems. Feel free to contact me. Enjoy your journey.
