@@ -4,34 +4,35 @@ description: 'Display inline code and code blocks'
 icon: 'bug'
 ---
 
-## Basic
+## Invalid page cover URL
 
-### Inline Code
+### Case
 
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
+https://www.documind.chat/ 
 
-```
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
-```
+After you open the extension, You can see the image. 
+<img
+  className="rounded-2xl"
+  src="/images/example1.png"
+  alt="example1"
+/>
 
-### Code Block
+But when you save the record. You will get this error.
+<img
+  className="rounded-2xl"
+  src="/images/example2.png"
+  alt="example2"
+/>
 
-Use [fenced code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) by enclosing code in three backticks and follow the leading ticks with the programming language of your snippet to get syntax highlighting. Optionally, you can also write the name of your code after the programming language.
+The reason is that, not all image path can be set to record cover.
 
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
+### Solution
 
-````md
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-````
+Deselect the "Set Cover" and save again.
+<img
+  className="rounded-2xl"
+  src="/images/example3.png"
+  alt="example3"
+/>
+
+Then click the View button and upload the cover manually.
