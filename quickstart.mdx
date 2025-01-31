@@ -4,13 +4,21 @@ description: 'Start using our service to make each of your time block valuable'
 icon: 'kickstarter'
 ---
 
+## Sign-Up
+
+Two register methods are supported: Google authentication register, Github authentication register.
+[Sign-Up Link](https://app.infotobiz.com/register?next=/dashboard)
+
 ## Sign-In
 
-Currently three login methods are supported: Google authentication login, Github authentication login, email login
+Three login methods are supported: Google authentication login, Github authentication login, email login
+[Sign-Up Link](https://app.infotobiz.com/login?next=/dashboard)
 
 ## Create your first project
 
+<Info>
 A project is a space connected to a Notion database that can collect multiple records.
+</Info>
 
 ### Notion Configuration
 
@@ -21,6 +29,7 @@ Currently the platform does not support customized database define.
 </Warning>
 
 As this is a tool I build for my own need,the structure of the database is fine enough to make a few products of my own including blogs and curated-lists.
+
 <Tip>
 The project template is [here](https://storm-patella-019.notion.site/Project-Template-174228d4dc6d80c9b5dbdda98398ff4e)
 </Tip>
@@ -46,8 +55,9 @@ The link structure is like this.
 />
 
 #### New a Integration
-
+<Info>
 Integration is used to operate Notion through API.
+</Info>
 
 The integration management page is [here](https://www.notion.so/profile/integrations)
 
@@ -67,13 +77,20 @@ Click New Integration.
 
 Config the integration.
 
-- Name: It is better to name the integration based on its purpose.
-
-- Workspace: Choose your own workspace where your database will be built in.
-
-- Type: Internal
-
-- Click Save.
+<Steps>
+  <Step title="Name">
+    It is better to name the integration based on its purpose
+  </Step>
+  <Step title="Workspace">
+    Choose your own workspace where your database will be built in
+  </Step>
+  <Step title="Type">
+    Internal
+  </Step>
+  <Step title="Save">
+    Click "Save"
+  </Step>
+</Steps>
 
 <img
   className="rounded-2xl"
@@ -83,11 +100,19 @@ Config the integration.
 
 Continue...
 
-- The "Internal Integration Secret" will be used to config the project.
-
-- Capabilities: Check these three capabilities.
-
-- Click Save.
+<Steps>
+  <Step title="Internal Integration Secret">
+    <Note>
+    The "Internal Integration Secret" will be used to config the project
+    </Note>
+  </Step>
+  <Step title="Capabilities">
+    Check these three capabilities
+  </Step>
+  <Step title="Save">
+    Click "Save"
+  </Step>
+</Steps>
 
 <img
   className="rounded-2xl"
